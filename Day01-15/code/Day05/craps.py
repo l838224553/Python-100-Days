@@ -21,6 +21,8 @@ while money > 0:
         debt = int(input('请下注: '))
         if 0 < debt <= money:
             break
+        else:
+            print("money不够")
     first = randint(1, 6) + randint(1, 6)
     print('玩家摇出了%d点' % first)
     if first == 7 or first == 11:
